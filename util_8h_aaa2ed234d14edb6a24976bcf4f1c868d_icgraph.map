@@ -1,0 +1,6 @@
+<map id="hweight8" name="hweight8">
+<area shape="rect" id="node1" title=" " alt="" coords="211,64,289,91"/>
+<area shape="rect" id="node2" href="$iio__axi__adc_8h.html#a8a040d28c77faec9b235b0ae684305f8" title="Read chunk of data from RAM to pbuf. Call &quot;iio_axi_adc_transfer_dev_to_mem&quot; first...." alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node3" href="$iio__axi__adc_8h.html#ab80031f02e7a822cd46aa56cd4ca2f1b" title="Transfer data from device into RAM." alt="" coords="10,57,158,98"/>
+<area shape="rect" id="node4" href="$ad9371_2src_2app_2headless_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="57,123,111,149"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="iio_unregister" name="iio_unregister">
+<area shape="rect" id="node1" title="Unregister interface." alt="" coords="232,81,340,108"/>
+<area shape="rect" id="node2" href="$iio__ad9361__app_8h.html#aeb5bba7ee5f1178014d2d11199ef7a18" title="Release resources." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node3" href="$iio__axi__adc__app_8h.html#af96fdb0348d329bd94e538c27c449485" title="Release resources." alt="" coords="5,56,184,83"/>
+<area shape="rect" id="node4" href="$iio__axi__dac__app_8h.html#a801becfebf98e3731c764ee4cc1293e3" title="Release resources." alt="" coords="5,107,184,133"/>
+<area shape="rect" id="node5" href="$iio__generic__app_8h.html#a572ab6471e017aac3f9446f893980ff4" title="Release resources." alt="" coords="6,157,183,184"/>
+</map>

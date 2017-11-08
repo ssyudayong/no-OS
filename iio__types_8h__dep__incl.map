@@ -1,0 +1,17 @@
+<map id="iio/iio_types.h" name="iio/iio_types.h">
+<area shape="rect" id="node1" title="Header file for iio_types." alt="" coords="536,5,644,32"/>
+<area shape="rect" id="node2" href="$iio_8h.html" title="Header file of iio." alt="" coords="478,87,545,114"/>
+<area shape="rect" id="node4" href="$iio__ad9361__app_8h.html" title="Header file of iio_ad9361." alt="" coords="5,169,164,211"/>
+<area shape="rect" id="node10" href="$iio__app_8h.html" title="Header file of iio_app." alt="" coords="247,87,394,114"/>
+<area shape="rect" id="node11" href="$iio__generic__app_8h.html" title="Header file of iio_generic_app." alt="" coords="591,80,749,121"/>
+<area shape="rect" id="node12" href="$iio__axi__adc_8h.html" title="Header file of iio_axi_adc." alt="" coords="819,80,945,121"/>
+<area shape="rect" id="node14" href="$iio__axi__dac_8h.html" title="Header file of iio_axi_dac." alt="" coords="1060,80,1187,121"/>
+<area shape="rect" id="node3" href="$iio_8c.html" title="Implementation of iio. This module implements read/write ops, required by libtinyiiod and further cal..." alt="" coords="357,177,423,203"/>
+<area shape="rect" id="node6" href="$iio__app_8c.html" title="Implementation of iio_app. This application instantiates iio_axi_adc and iio_axi_dac devices,..." alt="" coords="188,177,333,203"/>
+<area shape="rect" id="node7" href="$iio__axi__adc__app_8c.html" title="Implementation of iio_axi_adc_app. This application instantiates iio_axi_adc and iio_axi_dac devices,..." alt="" coords="447,169,575,211"/>
+<area shape="rect" id="node8" href="$iio__axi__dac__app_8c.html" title="Implementation of iio_axi_dac_app. This application instantiates iio_axi_adc and iio_axi_dac devices,..." alt="" coords="599,169,727,211"/>
+<area shape="rect" id="node9" href="$iio__generic__app_8c.html" title="Implementation of iio_generic_app." alt="" coords="751,169,909,211"/>
+<area shape="rect" id="node5" href="$iio__ad9361__app_8c.html" title="Implementation of iio_ad9361_app This module is a wrapper over &quot;ad9361_api&quot;, and it is used by &quot;iio&quot;." alt="" coords="5,259,164,300"/>
+<area shape="rect" id="node13" href="$iio__axi__adc_8c.html" title="Implementation of iio_axi_adc. This module is a wrapper over &quot;axi_adc&quot;, and it is used by &quot;iio&quot;." alt="" coords="933,169,1060,211"/>
+<area shape="rect" id="node15" href="$iio__axi__dac_8c.html" title="Implementation of iio_axi_dac. This module is a wrapper over &quot;axi_dac&quot;, and it is used by &quot;iio&quot;." alt="" coords="1084,169,1211,211"/>
+</map>

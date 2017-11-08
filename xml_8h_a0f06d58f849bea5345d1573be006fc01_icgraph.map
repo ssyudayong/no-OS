@@ -1,0 +1,5 @@
+<map id="xml_create_attribute" name="xml_create_attribute">
+<area shape="rect" id="node1" title=" " alt="" coords="203,31,357,57"/>
+<area shape="rect" id="node2" href="$iio__axi__adc_8h.html#abea73237289edd017befb3d98e506c43" title="Get xml corresponding to an &quot;axi_adc&quot; device." alt="" coords="5,5,155,32"/>
+<area shape="rect" id="node3" href="$iio__axi__dac_8h.html#ac1bb7510666dcf84aba5cc59bc5e7c18" title="Get an axi_dac xml." alt="" coords="5,56,155,83"/>
+</map>

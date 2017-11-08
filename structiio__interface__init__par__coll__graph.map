@@ -1,0 +1,6 @@
+<map id="iio_interface_init_par" name="iio_interface_init_par">
+<area shape="rect" id="node1" title="iio interface init parameters" alt="" coords="5,273,159,300"/>
+<area shape="rect" id="node2" href="$structiio__device.html" title="Structure holding channels and attributes of a device." alt="" coords="40,184,124,211"/>
+<area shape="rect" id="node3" href="$structiio__channel.html" title="Structure holding attributes of a channel." alt="" coords="127,95,221,121"/>
+<area shape="rect" id="node4" href="$structiio__attribute.html" title="Structure holding pointers to show and store functions." alt="" coords="33,5,131,32"/>
+</map>

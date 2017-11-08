@@ -1,0 +1,6 @@
+<map id="axi_dmac_transfer" name="axi_dmac_transfer">
+<area shape="rect" id="node1" title="axi_dmac_transfer" alt="" coords="201,78,341,105"/>
+<area shape="rect" id="node2" href="$iio__axi__adc_8h.html#ab80031f02e7a822cd46aa56cd4ca2f1b" title="Transfer data from device into RAM." alt="" coords="5,5,153,47"/>
+<area shape="rect" id="node3" href="$iio__axi__dac_8h.html#afe8a11373fdeb794373bff3787170ea5" title="Transfer data from RAM to device." alt="" coords="5,71,153,112"/>
+<area shape="rect" id="node4" href="$ad9208_2src_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="52,137,107,163"/>
+</map>

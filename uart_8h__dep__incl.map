@@ -1,0 +1,6 @@
+<map id="include/uart.h" name="include/uart.h">
+<area shape="rect" id="node1" title="Header file of UART interface." alt="" coords="265,5,375,32"/>
+<area shape="rect" id="node2" href="$aducm3029_2uart_8c.html" title="Implementation of UART driver for ADuCM302x." alt="" coords="5,80,208,121"/>
+<area shape="rect" id="node3" href="$generic_2uart_8c.html" title=" " alt="" coords="233,80,407,121"/>
+<area shape="rect" id="node4" href="$xilinx_2uart_8c.html" title=" " alt="" coords="431,80,590,121"/>
+</map>

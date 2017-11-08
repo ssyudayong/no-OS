@@ -1,0 +1,15 @@
+<map id="iio/iio_app/iio_axi_adc_app.c" name="iio/iio_app/iio_axi_adc_app.c">
+<area shape="rect" id="node1" title="Implementation of iio_axi_adc_app. This application instantiates iio_axi_adc and iio_axi_dac devices,..." alt="" coords="157,5,285,47"/>
+<area shape="rect" id="node2" href="$error_8h.html" title="Error codes definition." alt="" coords="68,95,132,121"/>
+<area shape="rect" id="node3" href="$iio_8h.html" title="Header file of iio." alt="" coords="116,169,164,196"/>
+<area shape="rect" id="node8" href="$iio__axi__adc__app_8h.html" title="Header file of iio_axi_adc_app." alt="" coords="207,95,342,121"/>
+<area shape="rect" id="node12" href="$xml_8h.html" title="Header file of xml." alt="" coords="423,95,481,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="121,244,199,271"/>
+<area shape="rect" id="node5" href="$iio__types_8h.html" title="Header file for iio_types." alt="" coords="5,244,96,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="86,319,167,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="234,319,305,345"/>
+<area shape="rect" id="node9" href="$axi__adc__core_8h.html" title="Driver for the Analog Devices AXI&#45;ADC&#45;CORE module." alt="" coords="308,169,425,196"/>
+<area shape="rect" id="node11" href="$axi__dmac_8h.html" title="Driver for the Analog Devices AXI&#45;DMAC core." alt="" coords="189,169,283,196"/>
+<area shape="rect" id="node10" href="$util_8h.html" title="Implementation of utility functions." alt="" coords="275,244,328,271"/>
+<area shape="rect" id="node13" title=" " alt="" coords="449,169,514,196"/>
+</map>
