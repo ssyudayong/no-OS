@@ -792,13 +792,8 @@ ssize_t iio_register(struct iio_interface_init_par *init_par)
  */
 ssize_t iio_unregister(const char *device_name)
 {
-	struct iio_interface *iio_interface = iio_get_interface(device_name,
-					      iio_interfaces);
 	struct iio_interfaces *interfaces;
 	int16_t i, deleted = 0;
-
-	if (!iio_interface)
-		return FAILURE;
 
 	interfaces = (struct iio_interfaces *)calloc(1, sizeof(struct iio_interfaces));
 	if (!interfaces)
