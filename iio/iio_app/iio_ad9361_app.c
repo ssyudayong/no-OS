@@ -2616,6 +2616,21 @@ static struct iio_device *iio_ad9361_create_device(const char *device_name)
 }
 
 /**
+ * @brief Delete iio_device.
+ * @param iio_device - Structure describing a device, channels and attributes.
+ * @return SUCCESS in case of success or negative value otherwise.
+ */
+static ssize_t iio_ad9361_delete_device(struct iio_device *iio_device)
+{
+	if (!iio_device)
+		return FAILURE;
+
+	free(iio_device);
+
+	return SUCCESS;
+}
+
+/**
  * @brief Application init for reading/writing and parameterization of a
  * generic device.
  * @param desc - Application descriptor.
@@ -2658,14 +2673,14 @@ int32_t iio_ad9361_app_init(struct iio_ad9361_app_desc **desc,
  */
 int32_t iio_ad9361_app_remove(struct iio_ad9361_app_desc *desc)
 {
-	int32_t status;
+	struct iio_interface *iio_interface;
 
 	if (!desc)
 		return FAILURE;
 
-	status = iio_unregister(desc->dev_name);
-	if(status < 0)
-		return FAILURE;
+	iio_interface = iio_unregister(desc->dev_name);
+	if (iio_interface)
+		iio_ad9361_delete_device(iio_interface->iio);
 
 	free(desc);
 

@@ -55,36 +55,6 @@
 /******************************************************************************/
 
 /**
- * @struct iio_interface
- * @brief Links a physical device instance "void *dev_instance"
- * with a "iio_device *iio" that describes capabilities of the device.
- */
-struct iio_interface {
-	/** Device name */
-	const char *name;
-	/** Opened channels */
-	uint32_t ch_mask;
-	/** Physical instance of a device */
-	void *dev_instance;
-	/** Device descriptor(describes channels and attributes) */
-	struct iio_device *iio;
-	/** Generate device xml */
-	ssize_t (*get_xml)(char **xml, struct iio_device *iio);
-	/** Transfer data from device into RAM */
-	ssize_t (*transfer_dev_to_mem)(void *dev_instance, size_t bytes_count,
-				       uint32_t ch_mask);
-	/** Read data from RAM to pbuf. It should be called after "transfer_dev_to_mem" */
-	ssize_t (*read_data)(void *dev_instance, char *pbuf, size_t offset,
-			     size_t bytes_count, uint32_t ch_mask);
-	/** Transfer data from RAM to device */
-	ssize_t (*transfer_mem_to_dev)(void *dev_instance, size_t bytes_count,
-				       uint32_t ch_mask);
-	/** Write data to RAM. It should be called before "transfer_mem_to_dev" */
-	ssize_t (*write_data)(void *dev_instance, char *pbuf, size_t offset,
-			      size_t bytes_count, uint32_t ch_mask);
-};
-
-/**
  * @struct iio_interfaces
  * @brief Structure containing all interfaces.
  */
@@ -788,28 +758,29 @@ ssize_t iio_register(struct iio_interface_init_par *init_par)
 /**
  * @brief Unregister interface.
  * @param device_name String containing device name.
- * @return SUCCESS in case of success or negative value otherwise.
+ * @return pointer to the iio_interface for further resource release.
  */
-ssize_t iio_unregister(const char *device_name)
+struct iio_interface* iio_unregister(const char *device_name)
 {
+	struct iio_interface *iio_interface = NULL;
 	struct iio_interfaces *interfaces;
 	int16_t i, deleted = 0;
 
 	interfaces = (struct iio_interfaces *)calloc(1, sizeof(struct iio_interfaces));
 	if (!interfaces)
-		return FAILURE;
+		return NULL;
 
 	interfaces->interfaces = (struct iio_interface **)calloc(
 					 iio_interfaces->num_interfaces - 1,
 					 sizeof(struct iio_interface*));
 	if (!interfaces->interfaces) {
 		free(interfaces);
-		return FAILURE;
+		return NULL;
 	}
 
 	for(i = 0; i < iio_interfaces->num_interfaces; i++) {
 		if (!strcmp(device_name, iio_interfaces->interfaces[i]->name)) {
-			free(iio_interfaces->interfaces[i]);
+			iio_interface = iio_interfaces->interfaces[i];
 			deleted = 1;
 			continue;
 		}
@@ -820,7 +791,7 @@ ssize_t iio_unregister(const char *device_name)
 	free(iio_interfaces);
 	iio_interfaces = interfaces;
 
-	return SUCCESS;
+	return iio_interface;
 }
 
 /**

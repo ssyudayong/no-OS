@@ -922,14 +922,18 @@ error_free_iio_axi_dac_inst:
  */
 int32_t iio_axi_dac_app_remove(struct iio_axi_dac_app_desc *desc)
 {
-	int32_t status;
+	struct iio_interface *iio_interface;
+	struct iio_axi_dac *iio_axi_dac_inst;
 
 	if (!desc)
 		return FAILURE;
 
-	status = iio_unregister(desc->iio_axi_dac_inst->dac->name);
-	if(status < 0)
-		return status;
+	iio_interface = iio_unregister(desc->iio_axi_dac_inst->dac->name);
+	if (iio_interface) {
+		iio_axi_dac_delete_device(iio_interface->iio);
+		iio_axi_dac_inst = (struct iio_axi_dac *)iio_interface->dev_instance;
+		free(iio_axi_dac_inst);
+	}
 
 	free(desc);
 

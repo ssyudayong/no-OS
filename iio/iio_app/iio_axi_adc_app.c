@@ -724,14 +724,18 @@ error_free_iio_axi_adc_inst:
  */
 int32_t iio_axi_adc_app_remove(struct iio_axi_adc_app_desc *desc)
 {
-	int32_t status;
+	struct iio_interface *iio_interface;
+	struct iio_axi_adc *iio_axi_adc_inst;
 
 	if (!desc)
 		return FAILURE;
 
-	status = iio_unregister(desc->iio_axi_adc_inst->adc->name);
-	if(status < 0)
-		return status;
+	iio_interface = iio_unregister(desc->iio_axi_adc_inst->adc->name);
+	if (iio_interface) {
+		iio_axi_adc_delete_device(iio_interface->iio);
+		iio_axi_adc_inst = (struct iio_axi_adc *)iio_interface->dev_instance;
+		free(iio_axi_adc_inst);
+	}
 
 	free(desc);
 
